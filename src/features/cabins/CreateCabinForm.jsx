@@ -130,7 +130,7 @@ function CreateCabinForm({ cabinEditData = {}, onCloseModal }) {
           id="image"
           accept="image/*"
           {...register("image", {
-            required: isEditSession ? false : " This feild is required",
+            required: isEditSession ? false : " This field is required",
           })}
         />
       </FormRow>
