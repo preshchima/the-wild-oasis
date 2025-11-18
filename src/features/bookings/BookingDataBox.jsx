@@ -76,9 +76,9 @@ const Price = styled.div`
   border-radius: var(--border-radius-sm);
   margin-top: 2.4rem;
 
-  background-color: ${(props) =>
+  background-color: ${props =>
     props.isPaid ? "var(--color-green-100)" : "var(--color-yellow-100)"};
-  color: ${(props) =>
+  color: ${props =>
     props.isPaid ? "var(--color-green-700)" : "var(--color-yellow-700)"};
 
   & p:last-child {
@@ -101,7 +101,6 @@ const Footer = styled.footer`
   text-align: right;
 `;
 
-// A purely presentational component
 function BookingDataBox({ booking }) {
   const {
     created_at,
